@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Work+Sans&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./node_modules/typed.js/dist/typed.umd.js">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span class="bars"><i class="fa-solid fa-bars"></i></span>
+            <a href="#home" class="logo-text"><span >Port<span class="logo-extra-color">folio</span></span></a>
+        </div>
+        <nav class="navbar">
+            <a href="#home"><span class="tab" style="--i:1" >Home</span></a>
+            <a href="#about"><span class="tab" style="--i:2">About</span></a>
+            <a href="#services"><span class="tab" style="--i:2">Services</span></a>
+            <a href="#skills"><span class="tab" style="--i:3">Skills</span></a>
+            <a href="#portfolio"><span class="tab" style="--i:4">Portfolio</span></a>
+            <a href="#contact"><span class="tab" style="--i:5">Contact</span></a>
+            <div  id="toggle">
+                <div id="ball">
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="image">
+            <img class="stand" src="./assets/photos/light.png" alt="">
+            <img class="light hide-light" src="./assets/photos/illusion.png" alt="">
+        </div>
+        <div class="container desc">
+            <h2 id="head">Hii, My name is</h2><h1 class="name">Vinay Kumar Bantubilli</h1>
+            <p>I'm a <span class="softwares">Developer</span></p>
+            <p style="color: aquamarine;">please toggle the button at top-right corner</p>
+            <br>
+            <div class="social-profiles">
+                <a style="--i:6" class="social" target="_blank" href="https://www.facebook.com/profile.php?id=100089888935337"><i class="fa-brands fa-facebook"></i></a>
+                <a style="--i:7" class="social" target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a style="--i:8" class="social" target="_blank" href="https://www.linkedin.com/in/vinay-kumar-bantubilli/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <button class="btn more"><a href="./assets/resume/BANTUBILLI VINAY KUMAR resume.pdf" download="Vinay-Kumar-Bantubilli.pdf"><span class="download-text"><i class="fa-solid fa-download fa-bounce" style="color: orangered;"></i>Download Resume</span></a></button>
+        
+        </div>
+        <div class="container photo">
+            <img class="profile-photo hide-photo" src="./assets/photos/vinay.jpeg" alt="">
+        </div>
+    </section>
+
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="image">
+                <img class="aboutPhoto" src="./assets/photos/vinay.jpeg" alt="">
+            </div>
+            <div class="about-text">
+                <h1 class="heading">About <span class="me">Me</span></h1>
+                <h4 class="developer">Full stack Developer</h4>
+                <br>
+                <div class="objective">
+                    <h5 class="sub-heading">Objective</h5>
+                    <span class="objective-desc">
+                        To gain an important position in an organization that gives me an opportunity to 
+                    improve my knowledge and expertise in several skills and contribute to the 
+                    growth of the organization and society with my technical, logical as well as 
+                    innovative skills.
+                    </span>
+                </div>
+                <br><br>
+                <div class="hori">
+                    <div class="hobbies">
+                        <h5 class="sub-heading">Hobbies</h5>
+                        <br>
+                        <div class="hobbies-list">
+                            <li class="hobby"><span>Drawing</span></li><br>
+                            <li class="hobby"><span>Volleyball</span></li><br>
+                            <li class="hobby"><span>Reading Books</span></li><br> 
+                            <li class="hobby"><span>Workout</span></li>
+                        </div>
+                    </div>
+                    <div class="certifications">
+                        <h5 class="sub-heading">Certifications</h5><br>
+                        <div class="certifications-list">
+                            <li class="jsp"><span>Trained as JAVA full stack developer in JSPIDERS institute...</span></li>
+                            <br>
+                            <li class="auto-cadd"><span>Certified for AUTO CADD (Computer Aided Design and Drafting) in ROM & RAM institute.</span>
+                            </li>
+                            <br>
+                            <li class="karate">
+                                <span>I got runner up certificate in karate championship in Kai Association (Kumite).</span>
+                            </li>
+                            <br>
+                            <li class="hobel-bellows">
+                                <span>Certified for Industrial Training in HOBEL BELLOWS.co. for 6 months..</span>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="resume" href="./assets/resume/BANTUBILLI VINAY KUMAR resume.pdf" download="Vinay-Kumar-Bantubilli.pdf"> <i class="fa-solid fa-download fa-bounce" style="color: orangered;"></i>Download Resume</a>
+
+    </section>
+
+
+    <!-- Services section -->
+    <section class="services" id="#services">
+        <div id="services" class="container">
+            <h1 class="heading">My <span class="me">Services</span></h1>
+            <ul class="list">
+                <li>
+                    <h3 class="head" style="--j:1"><i class="fa-solid fa-code fa-flip" style="color: aqua;"></i>Web Development</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, mollitia voluptate. Id quas praesentium ad magnam velit accusantium pariatur molestias.</span>
+                    <br>
+                    <a href="#"><span>read more...</span></a>
+                </li>
+                <li>
+                    <h3 class="head" style="--j:3"><i class="fa-brands fa-java" style="color: #ffa200;"></i> Java</h3>
+                    <h3></h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, mollitia voluptate. Id quas praesentium ad magnam velit accusantium pariatur molestias.</span>
+                    <br>
+                    <a href="#"><span>read more...</span></a>
+                </li>
+                <li>
+                    <h3 class="head" style="--j:5"><i class="fa-solid fa-database fa-flip" style="color: aqua;"></i> SQL</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, mollitia voluptate. Id quas praesentium ad magnam velit accusantium pariatur molestias.</span>
+                    <br>
+                    <a href="#"><span>read more...</span></a>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- skills section -->
+    <section class="skills" id="skills">
+        <h1 class="heading">My <span class="me">Skills</span></h1>
+        <div class="seperate">
+            <div class="container technical">
+                <h2 class="skill-sub-heading">Technical Skills</h2>
+                <ul class="list">
+                    <li class="list-item">
+                        <h2 style="--j:6"><i class="fa-brands fa-html5" style="color: #ff0000;"></i> Html</h2><br>
+                        <p>Hyper Text Markup Language is used to build the Web Block</p>
+                        <div class="progress-line">
+                            <span style="--j:6" class="html"></span>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <h2 style="--j:7"><i class="fa-brands fa-css3-alt" style="color: #00c2bf;"></i> CSS</h2><br>
+                        <p>Cascoding Style Sheet. Used along with the HTML for styling</p>
+                        <div class="progress-line">
+                            <span style="--j:7" class="css"></span>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <h2 style="--j:8"><i class="fa-brands fa-angular" style="color: #659eff;"></i> Angular</h2><br>
+                        <p>A framework used to design a Single Page Application</p>
+                        <div class="progress-line">
+                            <span style="--j:8" class="angular"></span>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <h2 style="--j:9"><i class="fa-brands fa-java" style="color: #ffa200;"></i> Java</h2><br>
+                        <p>JAVA is High Level used to develop Business Layer/Backend Application</p>
+                        <div class="progress-line">
+                            <span style="--j:9" class="java"></span>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <h2 style="--j:10"><i class="fa-brands fa-square-js" style="color: #fff700;"></i> Java Script</h2><br>
+                        <p>Dynamic Typed Language used to design the Client side App</p>
+                        <div class="progress-line">
+                            <span style="--j:10" class="js"></span>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <h2 style="--j:11">Type Script</h2><br>
+                        <p>Advance of Java script. But, it supports OOP's concepts like java</p>
+                        <div class="progress-line">
+                            <span style="--j:11" style="--p:1" class="ts"></span>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <h2 style="--j:12"><i class="fa-solid fa-database" style="color: #23d100;"></i> SQL</h2><br>
+                        <p>Sequal Language used to store the data permanently in the DATABASE</p>
+                        <div class="progress-line">
+                            <span style="--j:12" class="sql"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <br><br><br>
+
+            <!-- personal skills -->
+            <div class="personal-skills">
+                <h2 class="skill-sub-heading">Professional-Skills</h2>
+                <div class="container radial-bars">
+
+                    <!-- communication -->
+                    <div class="radial-bar communication">
+                        <svg>
+                            <!-- Create the background circle -->
+                            <circle class="background" cx="100" cy="100" r="90"></circle>
+    
+                            <!-- Create the progress circle -->
+                            <circle class="progress " id="progressCircle" cx="100" cy="100" r="90">
+                            </circle>
+                        </svg>
+                        <div class="details">
+                            <span class="percentage">75%</span><br>
+                            <span class="desc">Communication</span>
+                        </div>
+                    </div>
+
+
+
+                    <!-- creativity -->
+                    <div class="radial-bar creativity">
+                        <svg>
+                            <!-- Create the background circle -->
+                            <circle class="background" cx="100" cy="100" r="90"></circle>
+    
+                            <!-- Create the progress circle -->
+                            <circle class="progress" id="progressCircle" cx="100" cy="100" r="90">
+                            </circle>
+                        </svg>
+                        <div class="details">
+                            <span class="percentage">90%</span><br>
+                            <span class="desc">Creativity</span>
+                        </div>
+                    </div>
+
+
+                    <!-- problem-solving -->
+                    <div class="radial-bar problem-solving">
+                        <svg>
+                            <!-- Create the background circle -->
+                            <circle class="background" cx="100" cy="100" r="90"></circle>
+    
+                            <!-- Create the progress circle -->
+                            <circle class="progress" id="progressCircle" cx="100" cy="100" r="90">
+                            </circle>
+                        </svg>
+                        <div class="details">
+                            <span class="percentage">80%</span><br>
+                            <span class="desc">Problem-Solving</span>
+                        </div>
+                    </div>
+
+
+                    <!-- team-work -->
+                    <div class="radial-bar team-work">
+                        <svg>
+                            <!-- Create the background circle -->
+                            <circle class="background" cx="100" cy="100" r="90"></circle>
+    
+                            <!-- Create the progress circle -->
+                            <circle class="progress" id="progressCircle" cx="100" cy="100" r="90">
+                            </circle>
+                        </svg>
+                        <div class="details">
+                            <span class="percentage">90%</span><br>
+                            <span class="desc">Team-Work</span>
+                        </div>
+                    </div>
+                
+    
+                    <!-- <div class="oc">
+                        <div class="ic">
+                            <span class="percentage">50%</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading">Technical <span class="me">Projects</span></h1>
+        <div class="cont container">
+            <div class="project container">
+                <h2><span><i class="fa-solid fa-cart-shopping fa-bounce" style="color: rgb(121, 121, 199);"></i></span> e-kart App</h2>
+                <h5>Tools : <span class="tool">Angular</span></h5>
+                <span>I designed this App wheather we can search the product, filter the products, visit the product, add the product to cart, wishlisting the product etc...</span>
+
+            </div>
+            <div class="project container">
+                <h2><span><i class="fa-solid fa-dumbbell fa-spin" style="color: #1d5cc9;"></i></span> GYM Management App</h2>
+                <h5>Tools : <span class="tool">Angular Material</span></h5>
+                <span>In this App, the User/Admin can create the Account and login their respective account. I implement the CRUD operations Wheather the admin can manipulate the users using JSON server.</span>
+
+            </div>
+            <div class="project container">
+                <h2><span><i class="fa-solid fa-calculator fa-shake" style="color: #2d9f53;"></i></span> Calculator</h2>
+                <h5>Tools : <span class="tool">Html, Css, Java Script</span></h5>
+                <span>Basic Calculator Application. Here We can do Arithmatic operations. Visit the below calculators.</span>
+                <a href="https://vinay-kumar-bantubilli.github.io/calculator/" target="_blank"><span class="direct">1) calculator-1...</span></a>
+                <a href=" https://vinay-kumar-bantubilli.github.io/calculator_1/" target="_blank"><span class="direct">2) calculator-2...</span></a>
+            </div>
+            <div class="project container">
+                <h2><span><i class="fa-solid fa-building-columns fa-beat" style="color: orange;"></i></span> Bank Management</h2>
+                <h5>Tools : <span class="tool">Java (JDBC, Servlet, JSP)</span></h5>
+                <span>In this application the user can create/login to ther respective account and can do Deposit, Withdraw, Update mobile etc... which are permanently stored in MY SQL database.</span>
+
+            </div>
+            <div class="project container">
+                <h2><span><i class="fa-solid fa-book fa-beat" style="color: rgb(176, 36, 71);"></i></span> Library Management</h2>
+                <h5>Tools : <span class="tool">Java (JDBC, Servlet, JSP)</span></h5>
+                <span>In the app the user/client can create the account and can login. User able to upload the BOOKS and their respective details, which are permanently stored in MY SQL database.</span>
+            </div>
+
+            <div class="project container">
+                <h2><span><i class="fa-solid fa-file-audio fa-bounce" style="color: violet;"></i></span> Text To Speech Converter</h2>
+                <h5>Tools : <span class="tool">Java (JDBC, Servlet, JSP)</span></h5>
+                <span>A basic application wheather user can enter the text and Can listen the what did he entered. The user able to customise the language.</span>
+                
+                <a href="https://vinay-kumar-bantubilli.github.io/text-to-speech-converter/" target="_blank"><span class="direct">visit...</span></a>
+
+            </div>
+
+            <div class="project container">
+                <h2><span><i class="fa-solid fa-stopwatch fa-bounce" style="color: rgb(255, 196, 196);"></i></span> Stopwatch</h2>
+                <h5>Tools : <span class="tool">Java (JDBC, Servlet, JSP)</span></h5>
+                <span>A simple stop watch application.</span>
+                <span class="direct">go to Stopwatch...</span>
+            </div>
+        </div>
+        <br><br><br><br><br>
+    </section>
+
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact <span class="me">Me</span></h1><br><br><br><br>
+        <div class="container body">
+            <div class="container descr">
+                <h3 class="sub-heading">Let's Work together</h3>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid impedit dicta odio porro quos delectus in? Necessitatibus perferendis ipsum ratione? Lorem ipsum dolor sit, amet consectetur adipisicing elit. At incidunt minima molestias repellat consequatur ducimus cumque minus ab pariatur ut?</span>
+                <br><br>
+                <div class="contact-details">
+                    <span class="mail"><i class="fa-solid fa-phone fa-bounce" style="color: #00ff33;"></i> +91-9052522674</span><br>
+                    <span class="mail"><i class="fa-regular fa-envelope fa-shake" style="color: wheat;"></i> vinaykumarstdy@gmail.com</span>
+                </div>
+                <br>
+                <div class="social-profiles ">
+                    <a style="--i:6" class="social" target="_blank" href="https://www.facebook.com/profile.php?id=100089888935337"><i class="fa-brands fa-facebook"></i></a>
+                    <a style="--i:7" class="social" target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a style="--i:8" class="social" target="_blank" href="https://www.linkedin.com/in/vinay-kumar-bantubilli/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="container form">
+                <h3 class="tell-us">Please tell us</h3>
+                <div action="" class="container form-body">
+                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="number" class="form-control" placeholder="Mobile">
+                    <textarea name="textArea" id="textArea" cols="30" rows="10" class="form-control" placeholder="Enter the Message here"></textarea>
+                    <button class="btn more">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <a href="#"><h3 class="goTop"><i class="fa-solid fa-arrow-up fa-bounce"></i></h3></a>
+    <a href="#home">
+        <div class="backToTop">
+            <h2>Back to Top</h2>
+            <h1><i class="fa-solid fa-arrow-up fa-bounce"></i></h1>
+        </div>
+    </a>
+
+
+
+
+
+    <script src="./index.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</body>
+</html>

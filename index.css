@@ -1,0 +1,864 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+
+  
+  /* Style the active tab */
+  .tab.active {
+    border-bottom: 2px solid aqua;
+    color: aqua;
+}
+  
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.bars{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 7vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(33, 33, 40, 0.7);
+    position: fixed;
+    top: 0px;
+    z-index: 20;
+}
+.logo{
+    margin-left: 3vw;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.logo-text{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    cursor: default;
+    animation: slideRight 1s ease forwards;
+    cursor: pointer;
+}
+.logo-extra-color{
+    color: aqua;
+}
+.navbar{
+    display: flex;
+    margin-right: 3vw;
+    transition: 0.3s;
+    
+}
+.home .softwares{
+    font-size: 30px;
+    font-weight: 500;
+    color: aqua;
+}
+.home .download-text{
+    color: black;
+}
+.home .download-text:hover{
+    color: aqua;
+}
+.tab{
+    margin-left: 30px;
+    transition: color 0.2s;
+    opacity: 0;
+    animation: tabsAnimation forwards ease 1s;
+    animation-delay: calc(0.2s * var(--i));
+}
+.tab:hover{
+    color: aqua;
+}
+@keyframes tabsAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(400px);
+        color: aqua;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.header ul{
+    list-style: none;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33, 33, 40);
+    color: white;
+}
+.container.desc{
+    width: 40vw;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+}
+.image .stand{
+    position: absolute;
+    top: 0;
+    left: 12.5%;
+    width: 15vw;
+}
+.image .light{
+    left: 4.5%;
+    top: 24vh;
+    width: 30vw;
+}
+img{
+    width: 100%;
+}
+.light{
+    width: 25vw;
+    position: absolute;
+    left: -2.9vw;
+    top: 33vh;
+}
+#toggle{
+    height: 3vh;
+    width: 3.5vw;
+    border-radius: 60px;
+    background-color: rgb(134, 134, 134);
+    cursor: pointer;
+    margin-left: 25px;
+}
+#ball{
+    width: 3vh;
+    height: 3vh;
+    background-color: white;
+    border-radius: 100%;
+}
+#toggle.onColor{
+    background-color: green;
+}
+.move{
+    float: right;
+}
+.hide-light{
+    display: none;
+}
+.container.photo{
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    right: 10vw;
+    top: 25vh;
+    box-shadow: 0 0 30px 5px black;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hide-photo{
+    display: none;
+}
+.social-profiles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+}
+.social{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: scale 0.2s;
+    color: aqua;
+    opacity: 0;
+    animation: slideDown forwards ease 1s ;
+    animation-delay: calc(.2s * var(--i));
+}
+.social:hover{
+    border: 2px solid aqua;
+    box-shadow: 0px 0px 10px aqua;
+    scale: 1.3;
+}
+.btn.more{
+    background-color: aqua;
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px 20px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.home .btn.more:hover{
+    border: 2px solid aqua;
+    background-color: black;
+    color: aqua;
+}
+
+#head{
+    animation: slideLeft backwards ease 1s;
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.name{
+    animation: slideName forwards ease 1s;
+    opacity: 0;
+    animation-delay: 0.3s;
+    color: rgb(187, 187, 187);
+    text-shadow: 3px black;
+}
+
+@keyframes slideName{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+    
+
+@keyframes slideRight{
+    0%{
+        transform: translateZ(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateZ(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown{
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.about, .services, .skills{
+    color: white;
+    background-color: rgb(33, 33, 40);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.about .heading{
+    font-size: 40px;
+}
+.hobbies{
+    width: 10vw;
+    height: 30vh;
+    padding: 10px;
+    background-color: rgb(61, 61, 61);
+    box-shadow: 1px 1px 8px gray;
+}
+.certifications{
+    width: 30vw;
+    height: 48vh;
+    padding: 2vw;
+    background-color: rgb(53, 53, 53);
+}
+.sub-heading{
+    font-size: 22px;
+    color: aqua;
+}
+span, p{
+    font-weight: 400;
+}
+.hori{
+    display: flex;
+    gap: 1vw;
+}
+#services{
+    height: 100vh;
+}
+
+
+
+.about .resume{
+    position: absolute;
+    bottom: 5vh;
+    left: 41vw;
+}
+.resume{
+    color: white;
+    padding: 10px;
+    background-color: aqua;
+    color: black;
+    border-radius: 5px;
+}
+.resume:hover{
+    background-color: black;
+    color: aqua;
+    border: 2px solid aqua;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.about-text{
+    width: 45vw;
+}
+.objective span{
+    font-weight: 390;
+}
+.about-text .developer{
+    font-size: 30px;
+    color: orange;
+    font-weight: 500;
+}
+
+.about .image{
+    width: 27vw;
+}
+.about .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+.aboutPhoto{
+    width: 100%;
+    opacity: 0;
+    animation: AboutImage forwards ease 1s;
+}
+.fa-download{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.me{
+    color: aqua;
+}
+.hori span{
+    font-weight: 350;
+}
+@keyframes AboutImage{
+    0%{
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.services{
+    padding: 4vw;
+}
+.services .head{
+    opacity: 0;
+    animation: SkillsHeading forwards 1s ease;
+    animation-delay: calc(.2s * var(--j));
+    margin-bottom: 10px;
+}
+.services .list span{
+    font-weight: 350;
+}
+.services .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.services li{
+    margin: 2.5vw;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 2px solid aqua; */
+    box-shadow: 1px 1px 20px aqua;
+    transition: scale 0.2s;
+}
+.services li a{
+    color: yellow;
+    font-size: 20px;
+    animation: readMore forwards ease 1s ;
+}
+.services ul{
+    list-style: none;
+}
+@keyframes readMore{
+    0%{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.services li:hover{
+    scale: 1.15;
+}
+.services .list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.services .heading{
+    font-size: 40px;
+}
+.services .list .head{
+    font-size: 30px;
+}
+.services .list li{
+    padding: 2vw;
+}
+@keyframes SkillsHeading{
+    0%{
+        transform: translate(600px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+
+.skills{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.skills .heading{
+    font-size: 40px;
+}
+.skills .skill-sub-heading{
+    font-size: 30px;
+}
+
+.skills .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2vw;
+    list-style: none;
+    margin: 2vw;
+}
+.skills li{
+    padding: 2vw;
+    width: 23vw;
+    box-shadow: 1px 1px 20px gray;
+}
+
+
+.skills .list h2{
+    opacity: 0;
+    animation: SkillsHeading forwards 1s ease;
+    animation-delay: calc(.2s * var(--j));
+}
+.skills .container{
+    margin: 3vw;
+}
+.skills .progress-line{
+    width: 100%;
+    height: 6px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px gray;
+    overflow: hidden;
+    margin-top: 5vh;
+}
+.skills .progress-line span{
+    height: 100%;
+    z-index: 10;
+    background-color: aqua;
+    opacity: 0;
+    animation: ProgressLinear ease 1s forwards;
+    animation-delay: calc(0.2s * var(--j));
+}
+
+.skills .progress-line span.html{
+    width: 90%;
+}
+.skills .progress-line span.css{
+    width: 75%;
+}
+.skills .progress-line span.angular{
+    width: 65%;
+}
+.skills .progress-line span.js{
+    width: 70%;
+}
+.skills .progress-line span.java{
+    width: 80%;
+}
+.skills .progress-line span.ts{
+    width: 78%;
+}
+.skills .progress-line span.sql{
+    width: 80%;
+}
+
+
+@keyframes ProgressLinear{
+    0%{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.container.radial-bars{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vw;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 5vw;
+    box-shadow: 1px 1px 30px violet;
+}
+
+
+/* CSS for the SVG Circular Progress Bar */
+
+/* Background Circle Style */
+.personal-skills .radial-bar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.personal-skills .percentage{
+    color: aqua;
+}
+svg{
+    width: 200px;
+    height: 200px;
+}
+.background {
+    fill: none;
+    stroke: black;
+    stroke-width: 8;
+}
+.container .details{
+    position: absolute;
+    text-align: center;
+    color: yellow;
+}
+
+
+/* Progress Circle Style */
+/* for communication */
+.communication .progress {
+    fill: none;
+    stroke: #007bff;
+    stroke-width: 8;
+    stroke-dasharray: 565.48;
+    stroke-dashoffset: 565.48; 
+    /* Set to 75% progress */
+    animation: progressAnimationCommunication 2s linear forwards;
+}
+/* Animation Keyframes */
+@keyframes progressAnimationCommunication {
+    from {
+        stroke-dashoffset: 565.48; 
+    }
+    to {
+        stroke-dashoffset: 141.37;
+    }
+}
+
+
+/* for creativity */
+.creativity .progress {
+    fill: none;
+    stroke: #007bff;
+    stroke-width: 8;
+    stroke-dasharray: 565.48;
+    stroke-dashoffset: 565.48; 
+    /* Set to 75% progress */
+    animation: progressAnimationCreativity 2s linear forwards;
+}
+/* Animation Keyframes */
+@keyframes progressAnimationCreativity {
+    from {
+        stroke-dashoffset: 565.48; 
+    }
+    to {
+        stroke-dashoffset: 56.548;
+    }
+}
+
+
+.problem-solving .progress {
+    fill: none;
+    stroke: #007bff;
+    stroke-width: 8;
+    stroke-dasharray: 565.48;
+    stroke-dashoffset: 565.48; 
+    /* Set to 75% progress */
+    animation: progressAnimationPs 2s linear forwards;
+}
+/* Animation Keyframes */
+@keyframes progressAnimationPs {
+    from {
+        stroke-dashoffset: 565.48; 
+    }
+    to {
+        stroke-dashoffset: 113.096;
+    }
+}
+
+.team-work .progress {
+    fill: none;
+    stroke: #007bff;
+    stroke-width: 8;
+    stroke-dasharray: 565.48;
+    stroke-dashoffset: 565.48; 
+    /* Set to 75% progress */
+    animation: progressAnimationTw 2s linear forwards;
+}
+/* Animation Keyframes */
+@keyframes progressAnimationTw {
+    from {
+        stroke-dashoffset: 565.48; 
+    }
+    to {
+        stroke-dashoffset: 28.274;
+    }
+}
+
+
+/* Projects */
+.portfolio{
+    width: 100%;
+    background-color: rgb(33, 33, 40);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2vw;
+    margin: 2vw;
+}
+.portfolio .heading{
+    align-self: center;
+    font-size: 40px;
+}
+.portfolio .project{
+    width: 25vw;
+    box-shadow: 1px 1px 20px gray;
+    margin: 20px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.portfolio .project span{
+    font-weight: 300;
+}
+.portfolio .project h5{
+    font-size: 18px;
+}
+.portfolio .project h5 .tool{
+    font-size: 24px;
+    font-weight: 400;
+}
+.portfolio .tool{
+    color: aqua;
+}
+.portfolio .direct{
+    cursor: pointer;
+    color: greenyellow;
+}
+.portfolio .direct:hover{
+    color: orange;
+}
+
+
+
+/* contact section */
+.contact{
+    background-color: rgb(33, 33, 40);
+    color: white;
+    text-align: center;
+    padding-bottom: 4vw;
+}
+.contact .container.body{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+.contact .sub-heading{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.contact .container.descr{
+    color: white;
+    width: 40vw;
+    height: 40vh;
+    padding: 20px;
+    position: relative;
+    box-shadow: 3px 3px 10px gray;
+
+    /* background-color: gray; */
+}
+.contact .heading{
+    font-size: 40px;
+}
+.contact .container.form{
+    width: 40vw;
+    background-color: rgb(73, 73, 73);
+    box-shadow: 4px 4px 10px gray;
+    border: 2px solid rgb(0, 0, 0, 0.3);
+    
+}
+.contact .container.form-body{
+    display: flex;
+    justify-content: center;
+}
+.form h3{
+    margin-top: 2vw;
+}
+.contact a{
+    font-size: 24px;
+}
+.tell-us{
+    font-size: 25px;
+}
+.container.form .container.form-body{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.container.form .container.form-body input{
+    width: 25vw;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container.form .container.form-body textarea{
+    width: 25vw;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 25vw;
+    min-width: 25vw;
+    min-height: 5vh;
+}
+
+.form-body.container{
+    padding: 60px 0px;
+}
+.contact .form-body button{
+    width: 8vw;
+}
+.contact input{
+    background-color: whitesmoke;
+
+}
+.contact textarea{
+    max-height: 20vh;
+    background-color: whitesmoke;
+}
+.contact .social-profiles{
+    position: absolute;
+    bottom: 1vw;
+    left: 15vw;
+}
+.mail i{
+    font-size: 25px;
+}
+
+.goTop{
+    position: fixed;
+    bottom: 4vw;
+    right: 3vw;
+    background-color: aqua;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    transition: scale 0.2s;
+}
+.goTop:hover{
+    scale: 1.2;
+}
+#about{
+    padding-top: 4vw;
+}
+#skills{
+    padding-top: 3vw;
+}
+#portfolio{
+    padding-top: 3vw;
+}
+#contact{
+    padding-top: 3vw;
+}
+
+.backToTop{
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .more{
+    background-color: aqua;
+    border: none;
+    outline: none;
+}
+.contact .more:hover{
+    color: aqua;
+    border: 2px solid aqua;
+    background-color: black;
+}
